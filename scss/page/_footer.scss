@@ -1,0 +1,64 @@
+.footer {
+  background: #bfbfbf;
+  padding: 60px 0;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content {
+  @include mq("sp") {
+    width: 60%;
+  }
+}
+.footer-logo__wrapper {
+  width: 300px;
+  @include mq("sp") {
+    width: 180px;
+  }
+}
+.footer-text {
+  @include mq("sp") {
+    font-size: 12px;
+  }
+}
+.footer-text__above {
+  a {
+    color: #595757;
+  }
+  button {
+    transition: all 300ms ease;
+    background-color: black;
+    color: #e5e5e5;
+    font-size: 16px;
+    border: none;
+    padding: 0.2em 0.5em;
+    margin-top: 5px;
+    font-size: 18px;
+    &:hover {
+      background-color: #e5e5e5;
+      color: black;
+      opacity: 0.8;
+    }
+  }
+}
+.footer-text__below {
+  margin-top: 20px;
+}
+.footer-box {
+  @include mq("sp") {
+  }
+}
+.footer-logo2__wrapper {
+  width: 100px;
+  @include mq("sp") {
+    width: 50px;
+  }
+}
+.footer-text__lead {
+  @include mq("sp") {
+    font-size: 12px;
+  }
+}
+.footer__button {
+}

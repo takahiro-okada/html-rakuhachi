@@ -1,0 +1,221 @@
+/* ==================================================================================
+# mv
+================================================================================== */
+.mv {
+  position: relative;
+}
+.mv-figure-wrapper {
+  img {
+    width: 100%;
+    @include mq("sp") {
+      height: 50vh;
+      margin-top: 50px;
+      object-fit: cover;
+      background: $primary-color;
+    }
+  }
+}
+/* ==================================================================================
+# news
+================================================================================== */
+.news {
+}
+.news__inner {
+  margin: 80px auto;
+}
+.news-content {
+  background-color: #fff;
+  max-width: 1100px;
+  margin: 30px auto 90px;
+  @include mq("sp") {
+    width: 100%;
+  }
+}
+.news-content__inner {
+  padding: 60px 40px;
+  @include mq("sp") {
+    padding: 50px 10px;
+  }
+}
+.news-header {
+  color: $primary-color;
+  text-align: center;
+}
+.news-header__above {
+  font-size: 22px;
+  font-weight: 700;
+  @include mq("sp") {
+    font-size: 16px;
+  }
+}
+.news-header__below {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 700;
+  @include mq("sp") {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+}
+.news-header__text {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 2;
+  @include mq("sp") {
+    font-size: 16px;
+    margin-top: 40px;
+    line-height: 1.7;
+  }
+}
+.news-date {
+  text-align: center;
+  margin-top: 50px;
+}
+.news-date__text {
+  font-size: 30px;
+  font-weight: 500;
+  & + & {
+    margin-top: 30px;
+  }
+  @include mq("sp") {
+    font-size: 20px;
+  }
+}
+/* ==================================================================================
+# event
+================================================================================== */
+.event {
+  margin-bottom: 120px;
+  @include mq("sp") {
+    margin-bottom: 60px;
+  }
+}
+.event__inner {
+  margin-top: 100px;
+  @include mq("sp") {
+    margin-top: 60px;
+  }
+}
+
+.event-lead {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 70px;
+  font-size: 22px;
+  font-weight: 500;
+  @include mq("sp") {
+    width: 80%;
+    margin: 30px auto 20px;
+  }
+}
+.event__list {
+}
+.event__item {
+  background-color: #fff;
+  padding: 60px 40px;
+  text-align: center;
+  margin: 0 auto;
+  &:not(first-child) {
+    margin-top: 30px;
+  }
+  @include mq("sp") {
+    padding: 40px 10px;
+  }
+}
+.event__item-header {
+  color: $primary-color;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+  @include mq("sp") {
+    font-size: 20px;
+  }
+}
+.event__item-figure {
+  margin: 20px 0;
+}
+
+.event__item-lead {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  @include mq("sp") {
+    font-size: 16px;
+  }
+}
+
+.event__item-time {
+  border: 1px solid $font-color;
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  @include mq("sp") {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+/* ==================================================================================
+# schedule
+================================================================================== */
+.schedule {
+  table {
+    background: #fff;
+    width: 100%;
+    padding: 20px 30px;
+    margin: 100px auto;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    @include mq("sp") {
+      padding: 15px 10px;
+      border-spacing: 0 10px;
+      margin: 50px auto;
+    }
+    tr {
+    }
+    .schedule-time {
+      background: rgba(112, 120, 127, 0.65);
+      color: #fff;
+      border-radius: 10px;
+      padding: 20px 5px;
+      width: 170px;
+      font-size: 28px;
+      text-align: center;
+      @include mq("sp") {
+        vertical-align: middle;
+        width: 50px;
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+    .schedule-text {
+      border-collapse: collapse;
+      background: rgba(#d0dbe2, 0.3);
+      border-radius: 10px;
+      padding: 20px 20px;
+      font-size: 28px;
+      @include mq("sp") {
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+/* ==================================================================================
+# company
+================================================================================== */
+.company {
+}
+.company__inner {
+  margin: 120px auto;
+  @include mq("sp") {
+    margin: 80px auto;
+  }
+}
+.company-figure__wrapper {
+  text-align: center;
+}
